@@ -6,7 +6,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e90d9dda-33a0-48d9-99bc-90b1c3ba27aa" name="Default" comment="" />
+    <list default="true" id="e90d9dda-33a0-48d9-99bc-90b1c3ba27aa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.cirrus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -44,17 +47,17 @@
       <file leaf-file-name="CHANGELOG.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
+      <file leaf-file-name=".cirrus.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.cirrus.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -82,10 +85,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flutter_spotlight_test.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flutter_spotlight_test.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/flutter_spotlight_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -125,12 +130,13 @@
         <option value="$PROJECT_DIR$/example/test/widget_test.dart" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/flutter_spotlight_test.dart" />
+        <option value="$PROJECT_DIR$/.cirrus.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="89" />
-    <option name="y" value="149" />
+    <option name="y" value="90" />
     <option name="width" value="1430" />
     <option name="height" value="922" />
   </component>
@@ -147,29 +153,6 @@
             <path>
               <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_spotlight" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_spotlight" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_spotlight" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_spotlight" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_spotlight" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_spotlight" type="b2602c69:ProjectViewProjectNode" />
@@ -277,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="149" width="1430" height="922" extended-state="0" />
+    <frame x="89" y="90" width="1430" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -289,11 +272,11 @@
       <window_info anchor="bottom" id="Dart Analysis" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.43757576" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.43757576" />
       <window_info anchor="right" id="Flutter Outline" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536023" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536023" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -348,13 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_spotlight.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -394,7 +370,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/flutter_spotlight_test.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cirrus.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
       </provider>
     </entry>
   </component>

@@ -1,0 +1,12 @@
+container:
+  image: cirrusci/flutter:latest
+
+publish_task:
+  pub_cache:
+    folder: ~/.pub-cache
+  publish_script:
+    - flutter channel beta
+    - flutter doctor -v
+    - flutter packages pub publish --dry-run
+
+
