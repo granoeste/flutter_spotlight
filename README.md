@@ -1,8 +1,9 @@
 # flutter_spotlight
 
-Spotlight for Flutter
+Spotlight for Flutter that lights items for tutorials etc...
 
-[![pub package](https://img.shieflutter_spotlightlds.io/pub/v/flutter_spotlight.svg)](https://pub.dartlang.org/packages/flutter_spotlight)
+[![pub package](https://img.shields.io/pub/v/flutter_spotlight.svg)](https://pub.dartlang.org/packages/flutter_spotlight)
+
 
 ## Example
 
@@ -38,3 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+## Showcase
+
+![capture](https://user-images.githubusercontent.com/291993/46523938-3dbff100-c8c2-11e8-8103-7fade7f8e946.png)
