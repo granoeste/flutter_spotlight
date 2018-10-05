@@ -7,6 +7,4 @@ publish_task:
   publish_script:
     - flutter channel beta
     - flutter doctor -v
-    - flutter packages pub publish --dry-run
-
-
+    - flutter packages pub publish
