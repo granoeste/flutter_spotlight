@@ -8,5 +8,3 @@ publish_task:
     - flutter channel beta
     - flutter doctor -v
     - flutter packages pub publish --dry-run
-
-
