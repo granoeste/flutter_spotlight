@@ -13,6 +13,7 @@ class Spotlight extends StatefulWidget {
   final bool enabled;
   final Widget description;
   final GestureTapCallback onTap;
+  final bool animation;
 
   Spotlight(
       {Key key,
@@ -22,7 +23,8 @@ class Spotlight extends StatefulWidget {
       this.radius,
       this.enabled = true,
       this.onTap,
-      this.description})
+      this.description,
+      this.animation = false})
       : assert(child != null),
         super(key: key);
 
@@ -55,7 +57,55 @@ class Spotlight extends StatefulWidget {
 
 class SpotlightState extends State<Spotlight>
     with SingleTickerProviderStateMixin {
-  GlobalKey stickyKey = new GlobalKey();
+  GlobalKey stickyKey = GlobalKey();
+  AnimationController _controller;
+  Animation _animation;
+  double _fraction = 1.0;
+  bool _visible = false;
+
+  @override
+  void initState() {
+    super.initState();
+    if(widget.animation) {
+      _controller = AnimationController(
+        duration: Duration(milliseconds: 500),
+        vsync: this,
+      );
+      _animation = Tween(begin: 0.0, end: 1.0)
+          .animate(CurvedAnimation(parent: _controller, curve: Curves.ease))
+        ..addListener(() {
+          setState(() {
+            _fraction = _animation.value;
+          });
+        })
+        ..addStatusListener((status) {
+          if (status == AnimationStatus.completed) {
+            setState(() {
+              _visible = true;
+            });
+          } else if (status == AnimationStatus.dismissed) {
+            setState(() {
+              _visible = false;
+            });
+          }
+        });
+
+      _controller.forward();
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller?.dispose();
+    super.dispose();
+  }
+
+  @override
+  void didUpdateWidget(Spotlight oldWidget) {
+    _controller?.reset();
+    _controller?.forward();
+    super.didUpdateWidget(oldWidget);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,14 +117,16 @@ class SpotlightState extends State<Spotlight>
               IgnorePointer(child: widget.child),
               GestureDetector(
                 child: ClipPath(
-                  clipper: InvertedCircleClipper(
-                      adjustCenter(widget.center), widget.radius),
+                  clipper: InvertedCircleClipper(adjustCenter(widget.center),
+                      widget.radius * _fraction),
                   child: Stack(
                     children: <Widget>[
                       Container(
                         color: widget.color ?? Color.fromRGBO(0, 0, 0, 0.5),
                       ),
-                      widget.description ?? Container(),
+                      Opacity(
+                          opacity: _visible ? 1.0 : 0.0,
+                          child: widget.description ?? Container()),
                     ],
                   ),
                 ),

@@ -128,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
       radius: _radius,
       enabled: _enabled,
       description: _description,
+      animation: true,
       onTap: _onTap,
       color: Color.fromRGBO(0, 0, 0, 0.8),
       child: new Scaffold(
