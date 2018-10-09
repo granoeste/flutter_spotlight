@@ -5,12 +5,12 @@ Spotlight for Flutter that lights items for tutorials etc...
 [![pub package](https://img.shields.io/pub/v/flutter_spotlight.svg)](https://pub.dartlang.org/packages/flutter_spotlight)
 
 
-## Example
+## Simple Example
 
 ```dart
 class _MyHomePageState extends State<MyHomePage> {
-  Offset _center = Offset(100.0, 100.0);
-  double _radius = 50.0;
+  Offset _center = Offset(100.0, 100.0); // Center position of Spotlight
+  double _radius = 50.0; // Radius of Spotlight
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 ```
 
-## Showcase
+**For details see the example app**
+
+## Showcase from example app 
 
 ![capture](https://user-images.githubusercontent.com/291993/46523938-3dbff100-c8c2-11e8-8103-7fade7f8e946.png)
