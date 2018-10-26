@@ -39,7 +39,7 @@ class Spotlight extends StatefulWidget {
         super(key: key);
 
   @override
-  State<StatefulWidget> createState() => SpotlightState();
+  SpotlightState createState() => SpotlightState();
 
   /// Get Rect from GlobalKey.
   static Rect getRectFromKey(GlobalKey globalKey) {
